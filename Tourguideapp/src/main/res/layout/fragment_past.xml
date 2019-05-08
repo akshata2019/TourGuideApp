@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorToolbar"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/pastTour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mumbai Tours"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorSecondry"
+            android:textSize="20dp" />
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/avatar"
+            android:id="@+id/profile"
+            android:layout_below="@id/pastTour"
+
+            />
+
+        <TextView
+            android:id="@+id/upcomingTours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text=" John joseph"
+            android:layout_below="@id/pastTour"
+            android:textColor="@color/colorSecondry"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:id="@+id/calender"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/calendar"
+            android:layout_below="@id/profile"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tourDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upcomingTours"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="8dp"
+            android:text="05/05/2019"
+            android:textColor="@color/colorSecondry" />
+
+        <ImageView
+            android:id="@+id/imageverified"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="35dp"
+            android:layout_toRightOf="@id/upcomingTours"
+            app:srcCompat="@drawable/notverified" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/imageverified"
+            app:srcCompat="@drawable/warning"
+
+            />
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorToolbar"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@id/relativeLayout"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/pastTour1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chennai Tours"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorSecondry"
+            android:textSize="20dp" />
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/avatar"
+            android:id="@+id/profile1"
+            android:layout_below="@id/pastTour1"
+
+            />
+
+        <TextView
+            android:id="@+id/upcomingTours1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text=" John joseph"
+            android:layout_below="@id/pastTour1"
+            android:textColor="@color/colorSecondry"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:id="@+id/calender1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/calendar"
+            android:layout_below="@id/profile1"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tourDateTime1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upcomingTours1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="9dp"
+            android:text="05/05/2019"
+            android:textColor="@color/colorSecondry" />
+
+        <ImageView
+            android:id="@+id/imageverified1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="35dp"
+            android:layout_toRightOf="@id/upcomingTours1"
+            app:srcCompat="@drawable/notverified" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/imageverified1"
+            app:srcCompat="@drawable/warning"
+
+            />
+
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorToolbar"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@id/relativeLayout2"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/pastTour2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pune Tours"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorSecondry"
+            android:textSize="20dp" />
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/avatar"
+            android:id="@+id/profile2"
+            android:layout_below="@id/pastTour2"
+
+            />
+
+        <TextView
+            android:id="@+id/upcomingTours2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text=" John joseph"
+            android:layout_below="@id/pastTour2"
+            android:textColor="@color/colorSecondry"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:id="@+id/calender2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/calendar"
+            android:layout_below="@id/profile2"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tourDateTime2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upcomingTours2"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="8dp"
+            android:text="05/05/2019"
+            android:textColor="@color/colorSecondry" />
+
+        <ImageView
+            android:id="@+id/imageverified2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="35dp"
+            android:layout_toRightOf="@id/upcomingTours2"
+            app:srcCompat="@drawable/notverified" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/imageverified2"
+            app:srcCompat="@drawable/warning"
+
+            />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

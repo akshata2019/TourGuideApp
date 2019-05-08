@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<android.support.constraint.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:id="@+id/layout"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        >
+        <ImageView
+            android:id="@+id/backImage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+           android:src="@drawable/back"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="0dp"
+            />
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Application Status"
+            android:textSize="20dp"
+            android:textColor="@color/colorSecondry"
+            android:layout_marginLeft="80dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="71dp"
+            app:layout_constraintStart_toStartOf="parent"
+
+            />
+
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:background="@color/colorToolbar"
+        android:layout_margin="10dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textCurrentStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Status"
+            android:textSize="20dp"
+            android:textColor="@color/colorSecondry"
+            android:layout_centerVertical="true"   />
+        <TextView
+            android:id="@+id/pending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pending/"
+            android:layout_marginLeft="120dp"
+            android:textColor="#ff9800"
+            android:layout_toRightOf="@id/textCurrentStatus"
+
+            />
+        <TextView
+            android:id="@+id/approved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Approved/"
+            android:layout_marginLeft="120dp"
+            android:textColor="#388e3c"
+            android:layout_toRightOf="@id/textCurrentStatus"
+            android:layout_below="@id/pending"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rejected"
+            android:layout_marginLeft="120dp"
+            android:textColor="#bf360c"
+            android:layout_toRightOf="@id/textCurrentStatus"
+            android:layout_below="@id/approved"
+            />
+
+    </RelativeLayout>
+    <TextView
+
+        android:id="@+id/summeryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Summery"
+        android:textColor="@color/colorText"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="150dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="71dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/relativeLayout"
+        />
+
+
+    <TextView
+
+        android:id="@+id/firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name  :  Jorg"
+        android:textColor="@color/colorText"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="71dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/summeryText"
+        />
+
+
+    <TextView
+        android:id="@+id/applicationId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextFirstName"
+        android:text="Application Id   :    3343"
+        android:textColor="@color/colorText"
+        android:textSize="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="145dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/firstname"/>
+
+
+    <TextView
+        android:id="@+id/applicationDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextLastName"
+        android:text="Application Date   :  01/09/2018"
+        android:textColor="@color/colorText"
+        android:textSize="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="223dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/applicationId"/>
+
+    <TextView
+        android:id="@+id/emaiIdText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextLastName"
+        android:text="Email Id Verified"
+        android:textColor="@color/colorText"
+        android:textSize="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="223dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/applicationDateText"/>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/verified"
+        app:layout_constraintLeft_toRightOf="@id/emaiIdText"
+        app:layout_constraintTop_toBottomOf="@id/applicationDateText"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/mobileNumberText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextLastName"
+        android:text="Mobile number Verified"
+        android:textColor="@color/colorText"
+        android:textSize="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="223dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emaiIdText"/>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/notverified"
+        app:layout_constraintLeft_toRightOf="@id/emaiIdText"
+        app:layout_constraintTop_toBottomOf="@id/emaiIdText"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="70dp"/>
+
+
+    <TextView
+        android:id="@+id/documentText"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_below="@id/spinner1"
+        android:text="Re-upload Documents"
+        android:textColor="@color/colorText"
+        android:textSize="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="313dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mobileNumberText"/>
+
+    <ImageView
+        android:id="@+id/docFirst"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/documentText"
+        android:src="@drawable/upload"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/documentText"/>
+
+    <ImageView
+        android:id="@+id/docSecond"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/documentText"
+        android:src="@drawable/upload"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/documentText"
+        app:layout_constraintLeft_toRightOf="@id/docFirst"
+
+        />
+
+    <ImageView
+        android:id="@+id/docThird"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/documentText"
+        android:src="@drawable/upload"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toRightOf="@id/docSecond"
+        app:layout_constraintTop_toBottomOf="@id/documentText"
+        />
+
+    <ImageView
+        android:id="@+id/docFourth"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/documentText"
+        android:src="@drawable/upload"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toRightOf="@id/docThird"
+        app:layout_constraintTop_toBottomOf="@id/documentText"
+        />
+    <ImageView
+        android:id="@+id/verified"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/docFirst"
+        android:src="@drawable/verified"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintRight_toLeftOf="@id/docSecond"
+        app:layout_constraintTop_toBottomOf="@id/docFourth"
+        />
+    <TextView
+        android:id="@+id/acceptText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/verified"
+        android:text="I accept the"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/docSecond"/>
+    <TextView
+        android:id="@+id/termsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/acceptText"
+        android:text="Terms &amp; Conditions"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorTextSecondry"
+        app:layout_constraintTop_toBottomOf="@id/docSecond"/>
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:background="@drawable/button_rounded"
+        android:textColor="@color/colorSecondry"
+        app:layout_constraintRight_toLeftOf="@id/docFourth"
+        app:layout_constraintTop_toBottomOf="@id/termsText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="140dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="71dp"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>
+

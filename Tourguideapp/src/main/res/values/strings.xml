@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TourGuideApp</string>
+    <string name="title_activity_application_status">ApplicationStatusActivity</string>
+    <string name="user_type">Choose User Type</string>
+    <string-array name="user_array">
+        <item>Guide</item>
+        <item>Tourist</item>
+
+    </string-array>
+</resources>
