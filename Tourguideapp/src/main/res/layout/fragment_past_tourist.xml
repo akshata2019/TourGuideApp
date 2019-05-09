@@ -15,8 +15,8 @@
 
         <ImageView
             android:id="@+id/picture"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:src="@drawable/picture"/>
 
         <TextView
@@ -28,7 +28,7 @@
             android:layout_toRightOf="@id/picture"
             android:text="America "
             android:textColor="@color/colorSecondry"
-            android:textSize="25dp" />
+            android:textSize="20dp" />
 
 
 
@@ -42,7 +42,7 @@
             android:layout_below="@id/pastTour"
             android:textColor="@color/colorSecondry"
             android:layout_toRightOf="@id/picture"
-            android:textSize="17dp" />
+            android:textSize="15dp" />
 
 
         <TextView
@@ -58,8 +58,8 @@
 
         <ImageView
             android:id="@+id/imageverified"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_marginLeft="35dp"
             android:layout_toRightOf="@id/pastTour"
             android:src="@drawable/information" />
@@ -72,7 +72,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="200dp"
             android:rating="2.5"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:layout_alignBottom="@id/tourDateTime"
             />
 

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="100dp"
+
+        >
+        <ImageView
+            android:id="@+id/backImage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/back"
+
+            />
+
+        <TextView
+            android:id="@+id/regiText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tour Names"
+            android:textSize="20dp"
+            android:textColor="@color/colorText"
+            android:layout_marginLeft="120dp"
+
+
+            />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            >
+            <RelativeLayout
+                android:id="@+id/relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/download"
+               >
+
+
+
+                <TextView
+                    android:id="@+id/tourText"
+                    android:textStyle="bold"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="London"
+                    android:textSize="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#FFFFFF" />
+
+                <ImageView
+                    android:id="@+id/viewrs"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/tourText"
+                    android:src="@drawable/userwhite"
+                    android:layout_marginLeft="10dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/textViewvisits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="150 visits"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@id/tourText"
+                    android:layout_toRightOf="@id/viewrs"/>
+                <ImageView
+                    android:id="@+id/guidesimage"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/group"
+                    android:layout_toRightOf="@id/textViewvisits"
+                    android:layout_below="@id/tourText"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="120dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25 Guides"
+                    android:textColor="#FFFFFF"
+                    android:layout_toRightOf="@id/guidesimage"
+                    android:layout_below="@id/tourText"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"/>
+                <TextView
+                    android:id="@+id/bestText"
+                    android:textStyle="bold"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Best time to visit working hours"
+                    android:textColor="#FFFFFF"
+                    android:layout_below="@id/guidesimage"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:id="@+id/timeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mar-April/Mon-sat (9:00AM-7:00PM)"
+                    android:textColor="#FFFFFF"
+                    android:layout_below="@id/bestText"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"/>
+                <ImageView
+                    android:id="@+id/uploadfirst"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/uploadwhite"
+                    android:layout_below="@id/timeText"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"/>
+                <ImageView
+                    android:id="@+id/uploadSecond"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/uploadwhite"
+                    android:layout_below="@id/timeText"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/uploadfirst"/>
+                <ImageView
+                    android:id="@+id/uploadThird"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/uploadwhite"
+                    android:layout_below="@id/timeText"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/uploadSecond"/>
+                <ImageView
+                    android:id="@+id/uploadfourth"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/uploadwhite"
+                    android:layout_below="@id/timeText"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/uploadThird"/>
+
+                <TextView
+                    android:id="@+id/guideText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/guidesimage"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="33dp"
+                    android:layout_toRightOf="@id/bestText"
+                    android:text="Guide"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/relative_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location Description : London is beautiful city .it is  capital of UK" />
+            <RelativeLayout
+                android:id="@+id/relative_layout2"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/description"
+                android:background="@color/colorToolbar">
+                <TextView
+                    android:id="@+id/alternative"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="top alternatives"/>
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/alternative"
+                    android:text="London Musium"/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/location"
+                    android:text="20km"/>
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/placeholder"
+                    android:layout_toRightOf="@id/alternative"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="20dp"/>
+
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/relative_layout2"
+
+                android:background="@color/colorToolbar">
+                <TextView
+                    android:id="@+id/review"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Reviews"/>
+
+                <ImageView
+                    android:id="@+id/user"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/review"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="1dp"
+                    android:src="@drawable/user" />
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/user"
+
+                    android:text="john joseph"/>
+
+                <TextView
+                    android:id="@+id/locationname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/username"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="4dp"
+                    android:text="London" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/locationname"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Nice place for holiday" />
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

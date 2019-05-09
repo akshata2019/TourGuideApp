@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:queryHint="Search Here"
+        android:iconifiedByDefault="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="5dp"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorToolbar"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/picture"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/picture"/>
+
+        <TextView
+            android:id="@+id/pastTour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/picture"
+            android:text="Romi "
+            android:textColor="@color/colorSecondry"
+            android:textSize="20dp" />
+
+
+
+
+        <TextView
+            android:id="@+id/upcomingTours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="10 year exp"
+            android:layout_below="@id/pastTour"
+            android:textColor="@color/colorSecondry"
+            android:layout_toRightOf="@id/picture"
+            android:textSize="17dp" />
+
+
+        <TextView
+            android:id="@+id/tourDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upcomingTours"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="$10"
+            android:textColor="@color/colorSecondry"
+            android:layout_toRightOf="@id/picture"/>
+
+        <TextView
+            android:id="@+id/imageverified"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="78dp"
+            android:layout_toRightOf="@id/pastTour"
+            android:text="1.5 Km away" />
+
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tourDateTime"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="-1dp"
+            android:rating="2.5" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorToolbar"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/picture1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/picture"/>
+
+        <TextView
+            android:id="@+id/pastTour1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/picture1"
+            android:text="Romi "
+            android:textColor="@color/colorSecondry"
+            android:textSize="20dp" />
+
+
+
+
+        <TextView
+            android:id="@+id/upcomingTours1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="10 year exp"
+            android:layout_below="@id/pastTour1"
+            android:textColor="@color/colorSecondry"
+            android:layout_toRightOf="@id/picture1"
+            android:textSize="17dp" />
+
+
+        <TextView
+            android:id="@+id/tourDateTime1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upcomingTours1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="$10"
+            android:textColor="@color/colorSecondry"
+            android:layout_toRightOf="@id/picture1"/>
+
+        <TextView
+            android:id="@+id/imageverified1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="78dp"
+            android:layout_toRightOf="@id/pastTour1"
+            android:text="1.5 Km away" />
+
+
+        <RatingBar
+            android:id="@+id/ratingBar1"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tourDateTime1"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="-1dp"
+            android:rating="2.5" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorToolbar"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout1"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/picture2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/picture"/>
+
+        <TextView
+            android:id="@+id/pastTour2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/picture2"
+            android:text="Romi "
+            android:textColor="@color/colorSecondry"
+            android:textSize="20dp" />
+
+
+
+
+        <TextView
+            android:id="@+id/upcomingTours2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="10 year exp"
+            android:layout_below="@id/pastTour2"
+            android:textColor="@color/colorSecondry"
+            android:layout_toRightOf="@id/picture2"
+            android:textSize="17dp" />
+
+
+        <TextView
+            android:id="@+id/tourDateTime2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upcomingTours2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="$10"
+            android:textColor="@color/colorSecondry"
+            android:layout_toRightOf="@id/picture2"/>
+
+        <TextView
+            android:id="@+id/imageverified2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="78dp"
+            android:layout_toRightOf="@id/pastTour2"
+            android:text="1.5 Km away" />
+
+
+        <RatingBar
+            android:id="@+id/ratingBar2"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tourDateTime2"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="-1dp"
+            android:rating="2.5" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
