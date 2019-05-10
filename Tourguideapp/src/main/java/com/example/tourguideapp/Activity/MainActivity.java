@@ -6,13 +6,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 
 import com.example.tourguideapp.R;
 
 public class MainActivity extends Activity {
     Button registerButton,loginButton;
-    Spinner spinner;
+    //Spinner spinner;
+    RadioGroup RG;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,15 +30,24 @@ public class MainActivity extends Activity {
     }
 
     public void addListnerOnSpinnerItemSelection() {
-        spinner=findViewById(R.id.spinner1);
-        spinner.setOnItemSelectedListener(new CustomItemSelectedListner());
+        //spinner=findViewById(R.id.spinner1);
+        //spinner.setOnItemSelectedListener(new CustomItemSelectedListner());
+        RG=(RadioGroup)findViewById(R.id.radio_group);
+
+    }
+    private int getSelectedIndex(){
+        int radioButtonID = RG.getCheckedRadioButtonId();
+        View radioButton = RG.findViewById(radioButtonID);
+        int idx = RG.indexOfChild(radioButton);
+        return idx;
     }
 
     public void addListnerOnButton() {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(spinner.getSelectedItem().toString().equals("Guide")){
+//                if(spinner.getSelectedItem().toString().equals("Guide")){
+                if(getSelectedIndex()==0){
                 Intent i=new Intent(MainActivity.this,BookingActivity.class);
                 startActivity(i);
                 }
@@ -49,7 +60,8 @@ public class MainActivity extends Activity {
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(spinner.getSelectedItem().toString().equals("Guide")){
+                //if(spinner.getSelectedItem().toString().equals("Guide")){
+                if(getSelectedIndex()==0){
                     Intent i=new Intent(MainActivity.this,RegistrationActivity.class);
                     startActivity(i);
                 }
