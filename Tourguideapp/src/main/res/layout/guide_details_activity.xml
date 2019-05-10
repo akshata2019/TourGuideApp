@@ -48,56 +48,55 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/toolbar"
 
-        >
+        tools:layout_editor_absoluteX="103dp">
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="5dp"
-            android:paddingRight="15dp"
-           >
-        <ImageView
-            android:id="@+id/userimage"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="24dp"
-            android:src="@drawable/user"
-            />
+            android:paddingRight="15dp">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
-            android:layout_marginTop="24dp"
-            android:text="Romi"
-            android:textColor="@color/colorPrimary"
-            android:textSize="20dp"
-            android:layout_toRightOf="@id/userimage"
-             />
+            <ImageView
+                android:id="@+id/userimage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/user" />
 
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="5dp"
-            android:text="@string/london"
-            android:layout_toRightOf="@id/userimage"
-            android:layout_below="@id/textView"
-            android:layout_marginStart="8dp" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="24dp"
+                android:layout_toRightOf="@id/userimage"
+                android:text="Romi"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/userimage"
+                android:text="@string/london" />
 
             <RatingBar
                 android:id="@+id/ratingBar3"
                 style="@style/Base.Widget.AppCompat.RatingBar.Small"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/textView9"
                 android:layout_marginLeft="6dp"
                 android:layout_marginTop="5dp"
                 android:layout_toRightOf="@id/userimage"
-                android:rating="3"
                 android:max="2"
-                android:layout_below="@id/textView9" />
+                android:rating="3" />
 
             <TextView
                 android:id="@+id/language"
@@ -204,8 +203,8 @@
                 android:layout_below="@id/lineone"
                 android:layout_marginStart="40dp"
                 android:layout_marginLeft="40dp"
-                android:text="-----------------------------------------------------------------------"
                 android:layout_marginTop="10dp"
+                android:text="-----------------------------------------------------------------------"
                 android:textColor="@color/colorPrimary" />
 
             <TextView
@@ -216,46 +215,106 @@
                 android:layout_marginStart="116dp"
                 android:layout_marginLeft="116dp"
                 android:layout_marginTop="20dp"
-                android:text="Tours By Guide Name"
+                android:text="Tours By Romi joseph"
                 android:textColor="@color/colorPrimary"
                 android:textStyle="bold" />
 
-            <ImageView
-                android:id="@+id/locationImage"
+            <HorizontalScrollView
+                android:id="@+id/scrollable"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="200dp"
                 android:layout_below="@id/tours"
-                android:layout_marginStart="40dp"
-                android:layout_marginLeft="40dp"
-                android:layout_marginTop="10dp"
-                android:src="@drawable/download" />
+                android:layout_marginLeft="30dp"
+                android:scrollbars="horizontal">
 
-            <TextView
-                android:id="@+id/locationName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/locationImage"
-                android:layout_marginStart="48dp"
-                android:layout_marginLeft="48dp"
-                android:layout_marginTop="10dp"
-                android:text="London"
-                android:textColor="@color/colorPrimary" />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="180dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp">
 
-            <TextView
-                android:id="@+id/numberTours"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/locationImage"
-                android:layout_marginLeft="150dp"
-                android:layout_marginTop="10dp"
-                android:layout_toRightOf="@id/locationName"
-                android:text="60 Tours"
-                android:textColor="@color/colorPrimary" />
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:id="@+id/locationImage"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/download" />
+
+                        <TextView
+                            android:id="@+id/locationName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/locationImage"
+                            android:layout_marginStart="48dp"
+                            android:layout_marginLeft="48dp"
+                            android:layout_marginTop="12dp"
+                            android:text="London"
+                            android:textColor="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/numberTours"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/locationImage"
+                            android:layout_marginLeft="29dp"
+                            android:layout_marginTop="13dp"
+                            android:layout_toRightOf="@id/locationName"
+                            android:text="60 Tours"
+                            android:textColor="@color/colorPrimary" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/relativeLayout">
+
+                        <ImageView
+                            android:id="@+id/locationImage1"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/download" />
+
+                        <TextView
+                            android:id="@+id/locationName1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/locationImage1"
+                            android:layout_marginStart="48dp"
+                            android:layout_marginLeft="48dp"
+                            android:layout_marginTop="12dp"
+                            android:text="London"
+                            android:textColor="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/numberTours1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/locationImage1"
+                            android:layout_marginLeft="29dp"
+                            android:layout_marginTop="13dp"
+                            android:layout_toRightOf="@id/locationName1"
+                            android:text="60 Tours"
+                            android:textColor="@color/colorPrimary" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </HorizontalScrollView>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/numberTours"
+                android:layout_below="@id/scrollable"
                 android:layout_marginLeft="120dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="100dp"
@@ -263,7 +322,7 @@
                 android:padding="5dp"
                 android:text="Request Booking" />
 
-</RelativeLayout>
+        </RelativeLayout>
     </ScrollView>
 
     </android.support.constraint.ConstraintLayout>

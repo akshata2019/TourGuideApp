@@ -53,6 +53,9 @@ public class MainActivity extends Activity {
                     Intent i=new Intent(MainActivity.this,RegistrationActivity.class);
                     startActivity(i);
                 }
+                if(spinner.getSelectedItem().toString().equals("Choose user Type")){
+
+                }
                 else{
                     Intent i=new Intent(MainActivity.this,TouristRegistrationActivity.class);
                     startActivity(i);
