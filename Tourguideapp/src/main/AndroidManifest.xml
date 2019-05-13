@@ -28,6 +28,7 @@
         <activity android:name=".Activity.TourGuideActivity"/>
         <activity android:name=".Activity.GuideDetailsActivity"/>
         <activity android:name=".Activity.TouristProfileActivity"/>
+        <activity android:name=".Fragments.TourDetailsPastActivity"/>
     </application>
 
 </manifest>

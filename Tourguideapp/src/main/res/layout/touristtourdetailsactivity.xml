@@ -50,7 +50,7 @@
             <RelativeLayout
                 android:id="@+id/relative_layout"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="250dp"
                 android:background="@drawable/paris">
 
 
@@ -133,8 +133,8 @@
 
         <HorizontalScrollView
             android:id="@+id/horiscroll1"
-            android:layout_width="150dp"
-            android:layout_height="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
             android:layout_below="@id/timeText"
             android:layout_marginTop="5dp"
             android:scrollbars="horizontal">
@@ -146,22 +146,23 @@
             <RelativeLayout
                 android:id="@+id/relativeLayout6"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
+                android:layout_height="100dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="0dp"
                 >
                 <ImageView
                     android:id="@+id/uploadfirst"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="5dp"
-                    android:src="@drawable/paris" />
+                    android:src="@drawable/paris"
+                    />
 
                 <ImageView
                     android:id="@+id/uploadSecond"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_toRightOf="@id/uploadfirst"
@@ -169,8 +170,8 @@
 
                 <ImageView
                     android:id="@+id/uploadThird"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="5dp"
                     android:layout_toRightOf="@id/uploadSecond"
@@ -178,12 +179,46 @@
 
                 <ImageView
                     android:id="@+id/uploadfourth"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="5dp"
                     android:layout_toRightOf="@id/uploadThird"
-                    android:src="@drawable/paristhree" />
+                    android:src="@drawable/paris" />
+                <ImageView
+                    android:id="@+id/uploadfirst1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/paris" />
+
+                <ImageView
+                    android:id="@+id/uploadSecond2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/uploadfirst"
+                    android:src="@drawable/parisone" />
+
+                <ImageView
+                    android:id="@+id/uploadThird3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/uploadSecond"
+                    android:src="@drawable/paristwo" />
+
+                <ImageView
+                    android:id="@+id/uploadfourth4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/uploadThird"
+                    android:src="@drawable/paris" />
             </RelativeLayout>
 
 
@@ -224,7 +259,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="10dp"
                     android:text="Top alternatives"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold" />
@@ -245,8 +280,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="100dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/button_rounded">
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button">
 
 
 
@@ -267,21 +302,22 @@
                     android:text="20km" />
 
                 <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="20dp"
                     android:layout_toRightOf="@id/location"
-                    android:src="@drawable/placeholder" />
+                    android:src="@drawable/museum"
+                    android:layout_marginRight="5dp"/>
             </RelativeLayout>
             <RelativeLayout
                 android:id="@+id/relativeLayout4"
                 android:layout_width="wrap_content"
                 android:layout_height="100dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/relativeLayout3"
-                android:background="@drawable/button_rounded">
+                android:background="@drawable/button">
 
 
 
@@ -302,21 +338,22 @@
                     android:text="40km" />
 
                 <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="20dp"
                     android:layout_toRightOf="@id/location4"
-                    android:src="@drawable/placeholder" />
+                    android:src="@drawable/palace"
+                    android:layout_marginRight="5dp"/>
             </RelativeLayout>
             <RelativeLayout
                 android:id="@+id/relativeLayout5"
                 android:layout_width="wrap_content"
                 android:layout_height="100dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/relativeLayout4"
-                android:background="@drawable/button_rounded">
+                android:background="@drawable/button">
 
 
 
@@ -337,12 +374,13 @@
                     android:text="50km" />
 
                 <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="20dp"
                     android:layout_toRightOf="@id/location5"
-                    android:src="@drawable/placeholder" />
+                    android:src="@drawable/lords"
+                    android:layout_marginRight="5dp"/>
             </RelativeLayout>
 
 
@@ -385,7 +423,7 @@
                         android:layout_height="100dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="20dp"
-                        android:background="@drawable/button_rounded">
+                        android:background="@drawable/button">
 
 
 
@@ -435,7 +473,7 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="20dp"
                         android:layout_toRightOf="@id/relativeLayout"
-                        android:background="@drawable/button_rounded">
+                        android:background="@drawable/button">
 
 
 
@@ -485,7 +523,7 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="20dp"
                         android:layout_toRightOf="@id/relativeLayout1"
-                        android:background="@drawable/button_rounded">
+                        android:background="@drawable/button">
 
 
 
