@@ -38,7 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:text=" Location1 - Location2 - Location3"
+            android:text=" Texas - California - Florida"
             android:layout_below="@id/pastTour"
             android:textColor="@color/colorSecondry"
             android:layout_toRightOf="@id/picture"

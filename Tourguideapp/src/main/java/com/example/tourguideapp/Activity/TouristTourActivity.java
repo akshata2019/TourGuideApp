@@ -43,7 +43,7 @@ public class TouristTourActivity extends AppCompatActivity {
         imageProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(TouristTourActivity.this,ProfileActivity.class);
+                Intent i=new Intent(TouristTourActivity.this,TouristProfileActivity.class);
                 startActivity(i);
                 finish();
 
@@ -71,7 +71,7 @@ public class TouristTourActivity extends AppCompatActivity {
                 Fragment frag = null;
                 int itemId = menuItem.getItemId();
                 if (itemId == R.id.profile) {
-//                    Intent i=new Intent(TouristTourActivity.this,ProfileActivity.class);
+//                    Intent i=new Intent(TouristTourActivity.this,TouristProfileActivity.class);
 //                    startActivity(i);
 //                    finish();
 

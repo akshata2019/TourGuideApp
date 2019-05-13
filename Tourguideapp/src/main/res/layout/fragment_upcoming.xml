@@ -26,7 +26,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginBottom="5dp"
             android:layout_toRightOf="@id/picture"
-            android:text="America "
+            android:text="India "
             android:textColor="@color/colorSecondry"
             android:textSize="20dp" />
 
@@ -38,7 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:text=" Location1 - Location2 - Location3"
+            android:text=" Kerala - Karnataka - Orisa"
             android:layout_below="@id/pastTour"
             android:textColor="@color/colorSecondry"
             android:layout_toRightOf="@id/picture"

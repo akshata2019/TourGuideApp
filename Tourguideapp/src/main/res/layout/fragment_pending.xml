@@ -66,7 +66,7 @@
 
             android:layout_marginLeft="40dp"
             android:layout_marginTop="7dp"
-            android:text="Tour Date and Time :05/05/2019"
+            android:text="05/05/2019"
             android:textColor="@color/colorSecondry" />
 
         <ImageView
@@ -162,7 +162,7 @@
             android:layout_below="@id/touristName1"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="9dp"
-            android:text="Tour Date and Time :05/05/2019"
+            android:text="05/05/2019"
             android:textColor="@color/colorSecondry" />
 
         <ImageView
@@ -256,7 +256,7 @@
             android:layout_below="@id/touristName2"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="11dp"
-            android:text="Tour Date and Time :05/05/2019"
+            android:text="05/05/2019"
             android:textColor="@color/colorSecondry" />
 
         <ImageView
