@@ -25,7 +25,7 @@
             android:id="@+id/regiText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tour Names"
+            android:text="Dubai"
             android:textSize="20dp"
             android:textColor="@color/colorText"
             android:layout_marginLeft="120dp"
@@ -51,7 +51,7 @@
                 android:id="@+id/relative_layout"
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
-                android:background="@drawable/paris">
+                android:background="@drawable/dubai_1">
 
 
                 <TextView
@@ -62,7 +62,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
                     android:layout_weight="1"
-                    android:text="London"
+                    android:text="Burj Khalifa - Dubai Mall"
                     android:textColor="#FFFFFF"
                     android:textSize="20dp"
                     android:textStyle="bold" />
@@ -156,7 +156,7 @@
                     android:layout_height="100dp"
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="5dp"
-                    android:src="@drawable/paris"
+                    android:src="@drawable/dubai_1"
                     />
 
                 <ImageView
@@ -166,7 +166,7 @@
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_toRightOf="@id/uploadfirst"
-                    android:src="@drawable/parisone" />
+                    android:src="@drawable/dubai_2" />
 
                 <ImageView
                     android:id="@+id/uploadThird"
@@ -175,7 +175,7 @@
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="5dp"
                     android:layout_toRightOf="@id/uploadSecond"
-                    android:src="@drawable/paristwo" />
+                    android:src="@drawable/dubai_3" />
 
                 <ImageView
                     android:id="@+id/uploadfourth"
@@ -184,14 +184,15 @@
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="5dp"
                     android:layout_toRightOf="@id/uploadThird"
-                    android:src="@drawable/paris" />
+                    android:src="@drawable/dubai_4" />
                 <ImageView
                     android:id="@+id/uploadfirst1"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="5dp"
-                    android:src="@drawable/paris" />
+                    android:layout_toRightOf="@id/uploadfourth"
+                    android:src="@drawable/dubai_5" />
 
                 <ImageView
                     android:id="@+id/uploadSecond2"
@@ -199,8 +200,8 @@
                     android:layout_height="100dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="5dp"
-                    android:layout_toRightOf="@id/uploadfirst"
-                    android:src="@drawable/parisone" />
+                    android:layout_toRightOf="@id/uploadfirst1"
+                    android:src="@drawable/dubai_6" />
 
                 <ImageView
                     android:id="@+id/uploadThird3"
@@ -208,8 +209,8 @@
                     android:layout_height="100dp"
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="5dp"
-                    android:layout_toRightOf="@id/uploadSecond"
-                    android:src="@drawable/paristwo" />
+                    android:layout_toRightOf="@id/uploadSecond2"
+                    android:src="@drawable/dubai_1" />
 
                 <ImageView
                     android:id="@+id/uploadfourth4"
@@ -217,8 +218,8 @@
                     android:layout_height="100dp"
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="5dp"
-                    android:layout_toRightOf="@id/uploadThird"
-                    android:src="@drawable/paris" />
+                    android:layout_toRightOf="@id/uploadThird3"
+                    android:src="@drawable/dubai_2" />
             </RelativeLayout>
 
 
@@ -248,7 +249,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/relative_layout"
                 android:layout_marginTop="10dp"
-                android:text="Location Description : London is beautiful city .it is  capital of UK"
+                android:text="Burj Khalifa : Spired 828-meter skyscraper with a viewing deck, restaurant, hotel and offices and 11-hectare park."
                 android:textColor="@color/colorPrimary" />
 
 
@@ -291,7 +292,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="5dp"
-                    android:text="London Musium" />
+                    android:text="Burj Al Arab Jumeirah" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -299,7 +300,7 @@
                     android:layout_below="@id/location"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="5dp"
-                    android:text="20km" />
+                    android:text="10km" />
 
                 <ImageView
                     android:layout_width="100dp"
@@ -307,7 +308,7 @@
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="20dp"
                     android:layout_toRightOf="@id/location"
-                    android:src="@drawable/museum"
+                    android:src="@drawable/dubai_7"
                     android:layout_marginRight="5dp"/>
             </RelativeLayout>
             <RelativeLayout
@@ -327,7 +328,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="5dp"
-                    android:text="palace" />
+                    android:text="Palm Jumeirah" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -335,7 +336,7 @@
                     android:layout_below="@id/location4"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="5dp"
-                    android:text="40km" />
+                    android:text="20km" />
 
                 <ImageView
                     android:layout_width="100dp"
@@ -343,45 +344,10 @@
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="20dp"
                     android:layout_toRightOf="@id/location4"
-                    android:src="@drawable/palace"
+                    android:src="@drawable/dubai_8"
                     android:layout_marginRight="5dp"/>
             </RelativeLayout>
-            <RelativeLayout
-                android:id="@+id/relativeLayout5"
-                android:layout_width="wrap_content"
-                android:layout_height="100dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_toRightOf="@id/relativeLayout4"
-                android:background="@drawable/button">
 
-
-
-                <TextView
-                    android:id="@+id/location5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="5dp"
-                    android:text="Lords" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/location5"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="5dp"
-                    android:text="50km" />
-
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_toRightOf="@id/location5"
-                    android:src="@drawable/lords"
-                    android:layout_marginRight="5dp"/>
-            </RelativeLayout>
 
 
 
@@ -452,7 +418,7 @@
                             android:layout_below="@id/username"
                             android:layout_marginLeft="35dp"
                             android:layout_marginTop="4dp"
-                            android:text="London" />
+                            android:text="Burj Khalifa" />
 
 
                         <TextView
@@ -502,7 +468,7 @@
                             android:layout_below="@id/username1"
                             android:layout_marginLeft="35dp"
                             android:layout_marginTop="4dp"
-                            android:text="London" />
+                            android:text="Dubai Mall" />
 
 
                         <TextView
@@ -552,7 +518,7 @@
                             android:layout_below="@id/username2"
                             android:layout_marginLeft="35dp"
                             android:layout_marginTop="4dp"
-                            android:text="London" />
+                            android:text="Burj Khalifa" />
 
 
                         <TextView
