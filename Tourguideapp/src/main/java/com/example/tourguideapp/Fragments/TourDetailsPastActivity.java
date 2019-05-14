@@ -1,4 +1,4 @@
-package com.example.tourguideapp.Activity;
+package com.example.tourguideapp.Fragments;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,16 +7,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.example.tourguideapp.Fragments.PastFragment;
+import com.example.tourguideapp.Activity.BookingActivity;
+import com.example.tourguideapp.Activity.TourDetailsActivity;
 import com.example.tourguideapp.R;
 
-public class TourDetailsActivity extends Activity {
+public class TourDetailsPastActivity extends Activity {
     ImageView backImage;
     public static Button buttonReject,buttonAccept;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.tourdetails_activity);
+        setContentView(R.layout.tourdetails_past_activity);
         backImage=findViewById(R.id.backImage);
         buttonAccept=findViewById(R.id.buttonAccept);
         buttonReject=findViewById(R.id.buttonReject);
@@ -24,7 +25,7 @@ public class TourDetailsActivity extends Activity {
         backImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i =new Intent(TourDetailsActivity.this,BookingActivity.class);
+                Intent i =new Intent(TourDetailsPastActivity.this, BookingActivity.class);
                 startActivity(i);
                 finish();
             }

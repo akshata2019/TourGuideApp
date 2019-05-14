@@ -30,7 +30,7 @@ public class TouristTourActivity extends AppCompatActivity {
     DrawerLayout dLayout;
     TabLayout tabLayout;
     ViewPager viewPager;
-    ImageView imageView;
+    ImageView imageView,imageProfile;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +39,16 @@ public class TouristTourActivity extends AppCompatActivity {
 
         tabLayout=findViewById(R.id.tabLayout);
         imageView=findViewById(R.id.menu);
+        imageProfile=findViewById(R.id.imgProfile);
+        imageProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(TouristTourActivity.this,TouristProfileActivity.class);
+                startActivity(i);
+                finish();
+
+            }
+        });
         viewPager=findViewById(R.id.viewpager);
         setupViewPager(viewPager);
         tabLayout.setupWithViewPager(viewPager);
@@ -61,9 +71,9 @@ public class TouristTourActivity extends AppCompatActivity {
                 Fragment frag = null;
                 int itemId = menuItem.getItemId();
                 if (itemId == R.id.profile) {
-                    Intent i=new Intent(TouristTourActivity.this,ProfileActivity.class);
-                    startActivity(i);
-                    finish();
+//                    Intent i=new Intent(TouristTourActivity.this,TouristProfileActivity.class);
+//                    startActivity(i);
+//                    finish();
 
                 }
                 Toast.makeText(getApplicationContext(), menuItem.getTitle(), Toast.LENGTH_SHORT).show();

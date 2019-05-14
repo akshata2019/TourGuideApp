@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -39,42 +40,40 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/toolbar"
-        >
+        tools:layout_editor_absoluteX="0dp">
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="20dp"
-            >
+            android:padding="20dp">
+
             <RelativeLayout
                 android:id="@+id/relative_layout"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:background="@drawable/download"
-               >
-
+                android:layout_height="250dp"
+                android:background="@drawable/paris">
 
 
                 <TextView
                     android:id="@+id/tourText"
-                    android:textStyle="bold"
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
                     android:layout_weight="1"
                     android:text="London"
+                    android:textColor="#FFFFFF"
                     android:textSize="20dp"
-                    android:layout_centerHorizontal="true"
-                    android:textColor="#FFFFFF" />
+                    android:textStyle="bold" />
 
                 <ImageView
                     android:id="@+id/viewrs"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_below="@id/tourText"
-                    android:src="@drawable/userwhite"
                     android:layout_marginLeft="10dp"
+                    android:src="@drawable/userwhite"
 
                     />
 
@@ -82,85 +81,151 @@
                     android:id="@+id/textViewvisits"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="150 visits"
-                    android:textColor="#FFFFFF"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="5dp"
                     android:layout_below="@id/tourText"
-                    android:layout_toRightOf="@id/viewrs"/>
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/viewrs"
+                    android:text="150 visits"
+                    android:textColor="#FFFFFF" />
+
                 <ImageView
                     android:id="@+id/guidesimage"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/group"
-                    android:layout_toRightOf="@id/textViewvisits"
                     android:layout_below="@id/tourText"
+                    android:layout_marginLeft="120dp"
                     android:layout_marginTop="5dp"
-                    android:layout_marginLeft="120dp"/>
+                    android:layout_toRightOf="@id/textViewvisits"
+                    android:src="@drawable/group" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="25 Guides"
-                    android:textColor="#FFFFFF"
-                    android:layout_toRightOf="@id/guidesimage"
                     android:layout_below="@id/tourText"
+                    android:layout_marginLeft="5dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginLeft="5dp"/>
+                    android:layout_toRightOf="@id/guidesimage"
+                    android:text="25 Guides"
+                    android:textColor="#FFFFFF" />
+
                 <TextView
                     android:id="@+id/bestText"
-                    android:textStyle="bold"
-
                     android:layout_width="wrap_content"
+
                     android:layout_height="wrap_content"
+                    android:layout_below="@id/guidesimage"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
                     android:text="Best time to visit working hours"
                     android:textColor="#FFFFFF"
-                    android:layout_below="@id/guidesimage"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginLeft="10dp"/>
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/timeText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Mar-April/Mon-sat (9:00AM-7:00PM)"
-                    android:textColor="#FFFFFF"
                     android:layout_below="@id/bestText"
+                    android:layout_marginLeft="10dp"
                     android:layout_marginTop="5dp"
-                    android:layout_marginLeft="10dp"/>
+                    android:text="Mar-April/Mon-sat (9:00AM-7:00PM)"
+                    android:textColor="#FFFFFF" />
+
+
+        <HorizontalScrollView
+            android:id="@+id/horiscroll1"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_below="@id/timeText"
+            android:layout_marginTop="5dp"
+            android:scrollbars="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="150dp">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout6"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                >
                 <ImageView
                     android:id="@+id/uploadfirst"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/uploadwhite"
-                    android:layout_below="@id/timeText"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="15dp"
                     android:layout_marginTop="5dp"
-                    android:layout_marginLeft="15dp"/>
+                    android:src="@drawable/paris"
+                    />
+
                 <ImageView
                     android:id="@+id/uploadSecond"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/uploadwhite"
-                    android:layout_below="@id/timeText"
-                    android:layout_marginTop="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:layout_marginLeft="5dp"
-                    android:layout_toRightOf="@id/uploadfirst"/>
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/uploadfirst"
+                    android:src="@drawable/parisone" />
+
                 <ImageView
                     android:id="@+id/uploadThird"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/uploadwhite"
-                    android:layout_below="@id/timeText"
-                    android:layout_marginTop="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:layout_marginLeft="15dp"
-                    android:layout_toRightOf="@id/uploadSecond"/>
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/uploadSecond"
+                    android:src="@drawable/paristwo" />
+
                 <ImageView
                     android:id="@+id/uploadfourth"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/uploadwhite"
-                    android:layout_below="@id/timeText"
-                    android:layout_marginTop="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:layout_marginLeft="15dp"
-                    android:layout_toRightOf="@id/uploadThird"/>
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/uploadThird"
+                    android:src="@drawable/paris" />
+                <ImageView
+                    android:id="@+id/uploadfirst1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/paris" />
+
+                <ImageView
+                    android:id="@+id/uploadSecond2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/uploadfirst"
+                    android:src="@drawable/parisone" />
+
+                <ImageView
+                    android:id="@+id/uploadThird3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/uploadSecond"
+                    android:src="@drawable/paristwo" />
+
+                <ImageView
+                    android:id="@+id/uploadfourth4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/uploadThird"
+                    android:src="@drawable/paris" />
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+        </HorizontalScrollView>
 
                 <TextView
                     android:id="@+id/guideText"
@@ -179,117 +244,331 @@
 
             <TextView
                 android:id="@+id/description"
-                android:layout_marginTop="10dp"
-                android:layout_below="@id/relative_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Location Description : London is beautiful city .it is  capital of UK" />
-            <RelativeLayout
-                android:id="@+id/relative_layout2"
-                android:layout_marginTop="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_below="@id/description"
-                android:background="@color/colorToolbar">
+                android:layout_below="@id/relative_layout"
+                android:layout_marginTop="10dp"
+                android:text="Location Description : London is beautiful city .it is  capital of UK"
+                android:textColor="@color/colorPrimary" />
+
+
+
                 <TextView
+                    android:layout_below="@id/description"
                     android:id="@+id/alternative"
-                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Top alternatives"
                     android:textColor="@color/colorPrimary"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:text="top alternatives"/>
-                <TextView
+                    android:textStyle="bold" />
+        <HorizontalScrollView
+            android:id="@+id/horiscroll"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:layout_below="@id/alternative"
+            android:layout_marginTop="10dp"
+            android:scrollbars="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="150dp">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button">
+
+
+
+            <TextView
                     android:id="@+id/location"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginLeft="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/alternative"
-                    android:text="London Musium"/>
-                <TextView
-                    android:layout_marginTop="5dp"
                     android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="London Musium" />
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/location"
-                    android:text="20km"/>
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="20km" />
+
                 <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/placeholder"
-                    android:layout_toRightOf="@id/alternative"
-                    android:layout_marginLeft="130dp"
-                    android:layout_marginTop="20dp"/>
-
-
-
-
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/location"
+                    android:src="@drawable/museum"
+                    android:layout_marginRight="5dp"/>
             </RelativeLayout>
             <RelativeLayout
-                android:layout_marginTop="20dp"
-                android:layout_width="match_parent"
+                android:id="@+id/relativeLayout4"
+                android:layout_width="wrap_content"
                 android:layout_height="100dp"
-                android:layout_below="@id/relative_layout2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/relativeLayout3"
+                android:background="@drawable/button">
 
-                android:background="@color/colorToolbar">
+
+
                 <TextView
-                    android:id="@+id/review"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginLeft="5dp"
-                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/location4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:text="Reviews"/>
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="palace" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/location4"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="40km" />
 
                 <ImageView
-                    android:id="@+id/user"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_below="@id/review"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="1dp"
-                    android:src="@drawable/user" />
-                <TextView
-                    android:id="@+id/username"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="30dp"
                     android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/location4"
+                    android:src="@drawable/palace"
+                    android:layout_marginRight="5dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativeLayout5"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/relativeLayout4"
+                android:background="@drawable/button">
+
+
+
+                <TextView
+                    android:id="@+id/location5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/user"
-
-                    android:text="john joseph"/>
-
-                <TextView
-                    android:id="@+id/locationname"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/username"
-                    android:layout_marginLeft="35dp"
-                    android:layout_marginTop="4dp"
-                    android:text="London" />
-
+                    android:layout_marginTop="5dp"
+                    android:text="Lords" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/locationname"
-                    android:layout_marginLeft="35dp"
-                    android:layout_marginTop="4dp"
-                    android:text="Nice place for holiday" />
+                    android:layout_below="@id/location5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="50km" />
 
-
-
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/location5"
+                    android:src="@drawable/lords"
+                    android:layout_marginRight="5dp"/>
             </RelativeLayout>
 
 
 
+        </RelativeLayout>
+
+        </HorizontalScrollView>
 
 
 
 
+
+        <TextView
+                android:id="@+id/review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/horiscroll"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="Reviews"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:layout_below="@id/review"
+                android:layout_marginTop="10dp"
+                android:scrollbars="horizontal"
+                android:layout_marginBottom="100dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp">
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/button">
+
+
+
+                        <ImageView
+                            android:id="@+id/user"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/user" />
+
+                        <TextView
+                            android:id="@+id/username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="25dp"
+                            android:layout_toRightOf="@id/user"
+
+                            android:text="john joseph" />
+
+                        <TextView
+                            android:id="@+id/locationname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/username"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="4dp"
+                            android:text="London" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/locationname"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Nice place for holiday" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toRightOf="@id/relativeLayout"
+                        android:background="@drawable/button">
+
+
+
+                        <ImageView
+                            android:id="@+id/user1"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/user" />
+
+                        <TextView
+                            android:id="@+id/username1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="25dp"
+                            android:layout_toRightOf="@id/user1"
+
+                            android:text="john joseph" />
+
+                        <TextView
+                            android:id="@+id/locationname1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/username1"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="4dp"
+                            android:text="London" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/locationname1"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Nice place for holiday" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toRightOf="@id/relativeLayout1"
+                        android:background="@drawable/button">
+
+
+
+                        <ImageView
+                            android:id="@+id/user2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/user" />
+
+                        <TextView
+                            android:id="@+id/username2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="25dp"
+                            android:layout_toRightOf="@id/user2"
+
+                            android:text="john joseph" />
+
+                        <TextView
+                            android:id="@+id/locationname2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/username2"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="4dp"
+                            android:text="London" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/locationname2"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Nice place for holiday" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </HorizontalScrollView>
 
 
         </RelativeLayout>
