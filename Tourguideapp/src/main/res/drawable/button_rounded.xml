@@ -5,15 +5,15 @@
     <stroke
         android:drawable="@android:color/transparent"
         android:width="1dp"
-        android:color="#CC888888" >
+        android:color="@color/colorHeader" >
     </stroke>
 
-    <solid android:color="#9bddcb" />
+    <solid android:color="@color/colorHeader" />
 
     <corners
-        android:bottomLeftRadius="10dp"
-        android:bottomRightRadius="10dp"
-        android:topLeftRadius="10dp"
-        android:topRightRadius="10dp" />
+        android:bottomLeftRadius="22dp"
+        android:bottomRightRadius="22dp"
+        android:topLeftRadius="22dp"
+        android:topRightRadius="22dp" />
 
 </shape>
