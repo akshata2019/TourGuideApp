@@ -65,7 +65,7 @@ public class MainActivity extends Activity {
                     Intent i=new Intent(MainActivity.this,RegistrationActivity.class);
                     startActivity(i);
                 }
-                                else{
+                else{
                     Intent i=new Intent(MainActivity.this,TouristRegistrationActivity.class);
                     startActivity(i);
                 }
