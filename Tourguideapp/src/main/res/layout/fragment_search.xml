@@ -26,7 +26,7 @@
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/button"
+        android:background="@color/colorToolbar"
         android:layout_margin="10dp"
         app:layout_constraintTop_toBottomOf="@+id/searchView"
         android:padding="10dp">
@@ -44,7 +44,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginBottom="5dp"
             android:layout_toRightOf="@id/picture"
-            android:text="India "
+            android:text="America "
             android:textColor="@color/colorSecondry"
             android:textSize="20dp" />
 
@@ -56,7 +56,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:text=" Mumbai - Delhi - Chennai"
+            android:text=" Location1 - Location2 - Location3"
             android:layout_below="@id/pastTour"
             android:textColor="@color/colorSecondry"
             android:layout_toRightOf="@id/picture"
@@ -81,7 +81,7 @@
             android:layout_marginLeft="34dp"
             android:layout_marginTop="5dp"
             android:layout_toRightOf="@id/pastTour"
-            android:src="@drawable/info" />
+            android:src="@drawable/information" />
 
 
         <RatingBar

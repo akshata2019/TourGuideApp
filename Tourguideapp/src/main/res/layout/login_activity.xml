@@ -41,6 +41,7 @@
         android:singleLine="true"
         android:imeOptions="actionDone" />
 
+
     <EditText
         android:id="@+id/enterPassword"
         android:layout_width="match_parent"
@@ -128,6 +129,8 @@
             android:textSize="15sp" />
 
     </LinearLayout>
+
+
 
     <Button
         android:id="@+id/loginbutton"

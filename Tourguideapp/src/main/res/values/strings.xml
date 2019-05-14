@@ -4,7 +4,6 @@
     <string name="user_type">Choose User Type</string>
     <string name="london">London</string>
     <string-array name="user_array">
-        <item>Login as</item>
         <item>Guide</item>
         <item>Tourist</item>
 
