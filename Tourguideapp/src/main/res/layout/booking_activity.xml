@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-
+        android:background="@color/colorHeader"
         android:id="@+id/relative_layout">
 
         <include
@@ -44,7 +44,7 @@
         <RelativeLayout
             android:id="@+id/relativeLayout"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="200dp"
 
             >
             <ImageView
@@ -59,35 +59,43 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/imgProfile"
-                android:text="John Joseph"
+                android:text="Jess Joseph"
                 android:textSize="20dp"
                 android:textStyle="bold"
                 android:textAlignment="center"
-                android:textColor="@color/colorAccent"
+                android:textColor="@color/colorPrimary"
                 android:layout_centerHorizontal="true"/>
 
         </RelativeLayout>
         <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_below="@+id/relativeLayout"
             >
             <TextView
+                android:id="@+id/settingText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15dp"
-                android:layout_marginTop="35dp"
+                android:layout_marginTop="45dp"
                 android:text="Setting"
-                android:textColor="@color/colorAccent"
-                android:layout_marginLeft="15dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="20dp"
                 android:layout_toRightOf="@id/setting"
                 />
+            <!--<ImageView-->
+                <!--android:layout_width="20dp"-->
+                <!--android:layout_height="20dp"-->
+                <!--android:src="@drawable/arrow_right"-->
+                <!--android:layout_toRightOf="@id/settingText"-->
+                <!--android:layout_marginLeft="60dp"-->
+                <!--android:layout_marginTop="45dp"/>-->
             <ImageView
                 android:id="@+id/setting"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/settings"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="40dp"
                 android:layout_marginLeft="15dp"/>
             <TextView
                 android:id="@+id/aboutUs"
@@ -95,38 +103,56 @@
                 android:layout_height="wrap_content"
                 android:text="About Us"
                 android:textSize="15dp"
-                android:textColor="@color/colorAccent"
-                android:layout_marginTop="20dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="30dp"
                 android:layout_toRightOf="@id/about"
                 android:layout_below="@id/setting"
-                android:layout_marginLeft="15dp"
-                />
+                android:layout_marginLeft="20dp"/>
+            <!--<ImageView-->
+                <!--android:layout_width="20dp"-->
+                <!--android:layout_height="20dp"-->
+                <!--android:src="@drawable/arrow_right"-->
+                <!--android:layout_toRightOf="@id/aboutUs"-->
+                <!--android:layout_below="@id/setting"-->
+
+                <!--android:layout_marginLeft="50dp"-->
+                <!--android:layout_marginTop="30dp"/>-->
+
             <ImageView
                 android:id="@+id/about"
                 android:layout_below="@id/setting"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="25dp"
                 android:layout_marginLeft="15dp"
-                android:src="@drawable/about"/>
+                android:src="@drawable/about_us"/>
             <TextView
                 android:id="@+id/faq"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Faq"
                 android:textSize="15dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="30dp"
                 android:layout_toRightOf="@id/info"
                 android:layout_below="@id/about"
-                android:layout_marginLeft="15dp"
-                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/colorPrimary"
                 />
+            <!--<ImageView-->
+                <!--android:layout_width="20dp"-->
+                <!--android:layout_height="20dp"-->
+                <!--android:src="@drawable/arrow_right"-->
+                <!--android:layout_toRightOf="@id/faq"-->
+                <!--android:layout_below="@id/about"-->
+
+                <!--android:layout_marginLeft="70dp"-->
+                <!--android:layout_marginTop="30dp"/>-->
             <ImageView
                 android:layout_below="@id/about"
                 android:id="@+id/info"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="25dp"
                 android:layout_marginLeft="15dp"
                 android:src="@drawable/information"/>
         </RelativeLayout>

@@ -2,7 +2,8 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/button">
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
@@ -16,9 +17,9 @@
             android:id="@+id/pastTour"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="America"
+            android:text="Abu dhabi tour"
             android:layout_marginBottom="5dp"
-            android:textColor="@color/colorSecondry"
+            android:textColor="@color/colorAccent"
             android:textSize="20dp" />
 
 
@@ -59,7 +60,7 @@
             android:layout_marginLeft="40dp"
             android:layout_marginTop="6dp"
             android:text="05/05/2019"
-            android:textColor="@color/colorSecondry" />
+            android:textColor="@color/colorHeader" />
 
         <ImageView
             android:id="@+id/imageverified"
@@ -93,9 +94,9 @@
             android:id="@+id/pastTour1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="London Tour"
+            android:text="Ajman Tour"
             android:layout_marginBottom="10dp"
-            android:textColor="@color/colorSecondry"
+            android:textColor="@color/colorAccent"
             android:textSize="20dp" />
 
 
@@ -113,9 +114,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
-            android:text=" John joseph"
+            android:text="Ravi Kumar"
             android:layout_below="@id/pastTour1"
-            android:textColor="@color/colorSecondry"
+            android:textColor="@color/colorHeader"
             android:textSize="17dp" />
 
         <ImageView
@@ -169,9 +170,9 @@
             android:id="@+id/pastTour2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Paris Tour"
+            android:text="Sharjah Tour"
             android:layout_marginBottom="10dp"
-            android:textColor="@color/colorSecondry"
+            android:textColor="@color/colorAccent"
             android:textSize="20dp" />
 
 
@@ -189,7 +190,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
-            android:text=" John joseph"
+            android:text=" Ram Rao"
             android:layout_below="@id/pastTour2"
             android:textColor="@color/colorSecondry"
             android:textSize="17dp" />
@@ -211,7 +212,7 @@
             android:layout_marginLeft="40dp"
             android:layout_marginTop="5dp"
             android:text="05/05/2019"
-            android:textColor="@color/colorSecondry" />
+            android:textColor="@color/colorHeader" />
 
         <ImageView
             android:id="@+id/imageverified2"

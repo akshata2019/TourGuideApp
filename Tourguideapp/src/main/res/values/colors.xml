@@ -8,4 +8,6 @@
     <color name="colorHeader">#005b82</color>
     <color name="colorTextSecondry">#0039cb</color>
     <color name="colorToolbar">#e0e0e0</color>
+    <color name="colorButtonText">#FFFFFF</color>
+
 </resources>
