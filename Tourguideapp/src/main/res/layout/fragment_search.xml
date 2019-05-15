@@ -22,79 +22,116 @@
         android:src="@drawable/filter"
         app:layout_constraintLeft_toRightOf="@id/searchView"
         app:layout_constraintTop_toTopOf="parent" />
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button"
+        android:layout_height="100dp"
+        card_view:cardCornerRadius="4dp"
         android:layout_margin="10dp"
         app:layout_constraintTop_toBottomOf="@+id/searchView"
-        android:padding="10dp">
+        >
 
-        <ImageView
-            android:id="@+id/picture"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:src="@drawable/picture"/>
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:visibility="visible"
+            android:gravity="center"
+            android:padding="0dp">
 
-        <TextView
-            android:id="@+id/pastTour"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginBottom="5dp"
-            android:layout_toRightOf="@id/picture"
-            android:text="India "
-            android:textColor="@color/colorSecondry"
-            android:textSize="20dp" />
+            <ImageView
+                android:id="@+id/picture"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/dubai_1"/>
 
-
-
-
-        <TextView
-            android:id="@+id/upcomingTours"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:text=" Mumbai - Delhi - Chennai"
-            android:layout_below="@id/pastTour"
-            android:textColor="@color/colorSecondry"
-            android:layout_toRightOf="@id/picture"
-            android:textSize="17dp" />
+            <TextView
+                android:id="@+id/pastTour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@id/picture"
+                android:text="Dubai"
+                android:textColor="@color/colorSecondry"
+                android:textSize="20dp" />
 
 
-        <TextView
-            android:id="@+id/tourDateTime"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/upcomingTours"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="5dp"
-            android:text="05/05/2019"
-            android:textColor="@color/colorSecondry"
-            android:layout_toRightOf="@id/picture"/>
-
-        <ImageView
-            android:id="@+id/imageverified"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="34dp"
-            android:layout_marginTop="5dp"
-            android:layout_toRightOf="@id/pastTour"
-            android:src="@drawable/info" />
 
 
-        <RatingBar
-            android:id="@+id/ratingBar"
-            style="@style/Widget.AppCompat.RatingBar.Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="200dp"
-            android:rating="2.5"
-            android:layout_marginTop="10dp"
-            android:layout_alignBottom="@id/tourDateTime"
-            />
+            <TextView
+                android:id="@+id/upcomingTours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Burj Khalifa - Dubai Mall"
+                android:layout_below="@id/pastTour"
+                android:textColor="@color/colorSecondry"
+                android:layout_toRightOf="@id/picture"
+                android:textSize="17dp" />
 
 
-    </RelativeLayout>
+            <ImageView
+                android:id="@+id/imageverified"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="34dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:layout_toRightOf="@id/pastTour"
+                android:src="@drawable/info" />
+            <TextView
+                android:id="@+id/rates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:text="Staring from 20$/day"
+                android:layout_below="@id/upcomingTours"
+                android:textColor="@color/colorSecondry"
+                android:layout_toRightOf="@id/picture"
+                android:textSize="14sp" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:rating="2.5"
+                android:max="1"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/upcomingTours"
+                android:layout_alignBottom="@id/tourDateTime"
+                android:layout_toRightOf="@id/rates"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/rates"
+                android:layout_marginTop="8dp"
+                android:gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/upcomingTours">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3.5"/>
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_star_blue_24dp"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
 </android.support.constraint.ConstraintLayout>
