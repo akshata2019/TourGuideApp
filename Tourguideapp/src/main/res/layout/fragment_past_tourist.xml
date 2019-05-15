@@ -3,80 +3,93 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button"
+        android:layout_height="100dp"
+        card_view:cardCornerRadius="4dp"
         android:layout_margin="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:padding="10dp">
 
-        <ImageView
-            android:id="@+id/picture"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:src="@drawable/picture"/>
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:visibility="visible"
+            android:gravity="center"
+            android:padding="0dp">
 
-        <TextView
-            android:id="@+id/pastTour"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginBottom="5dp"
-            android:layout_toRightOf="@id/picture"
-            android:text="America "
-            android:textColor="@color/colorSecondry"
-            android:textSize="20dp" />
+            <ImageView
+                android:id="@+id/picture"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/dubai_10"/>
 
-
-
-
-        <TextView
-            android:id="@+id/upcomingTours"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:text=" Texas - California - Florida"
-            android:layout_below="@id/pastTour"
-            android:textColor="@color/colorSecondry"
-            android:layout_toRightOf="@id/picture"
-            android:textSize="15dp" />
+            <TextView
+                android:id="@+id/pastTour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@id/picture"
+                android:text="Sharjah"
+                android:textColor="@color/colorSecondry"
+                android:textSize="20dp" />
 
 
-        <TextView
-            android:id="@+id/tourDateTime"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/upcomingTours"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="5dp"
-            android:text="05/05/2019"
-            android:textColor="@color/colorSecondry"
-            android:layout_toRightOf="@id/picture"/>
-
-        <ImageView
-            android:id="@+id/imageverified"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="35dp"
-            android:layout_toRightOf="@id/pastTour"
-            android:src="@drawable/info" />
 
 
-        <RatingBar
-            android:id="@+id/ratingBar"
-            style="@style/Widget.AppCompat.RatingBar.Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="200dp"
-            android:rating="2.5"
-            android:layout_marginTop="15dp"
-            android:layout_alignBottom="@id/tourDateTime"
-            />
+            <TextView
+                android:id="@+id/upcomingTours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Sharjah Museum - Al Qasba"
+                android:layout_below="@id/pastTour"
+                android:textColor="@color/colorSecondry"
+                android:layout_toRightOf="@id/picture"
+                android:textSize="17dp" />
 
 
-    </RelativeLayout>
+            <TextView
+                android:id="@+id/rates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:text="5th May, 2019"
+                android:layout_below="@id/upcomingTours"
+                android:textColor="@color/colorSecondry"
+                android:layout_toRightOf="@id/picture"
+                android:textSize="14sp" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/rates"
+                android:layout_marginTop="8dp"
+                android:gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/upcomingTours">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rate"
+                    android:textColor="@color/colorAccent"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
 
 </android.support.constraint.ConstraintLayout>
