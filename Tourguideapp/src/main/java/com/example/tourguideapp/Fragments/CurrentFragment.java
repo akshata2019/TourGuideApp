@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
 import com.example.tourguideapp.Activity.TourDetailsActivity;
+import com.example.tourguideapp.Activity.TourDetailsPastActivity;
 import com.example.tourguideapp.R;
 
 public class CurrentFragment  extends Fragment {
@@ -29,8 +30,9 @@ public class CurrentFragment  extends Fragment {
         firstLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(getActivity(), TourDetailsActivity.class);
+                Intent i=new Intent(getActivity(), TourDetailsPastActivity.class);
                 startActivity(i);
+                getActivity().finish();
 
             }
         });

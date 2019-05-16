@@ -39,7 +39,7 @@
         android:layout_height="match_parent"
         android:layout_below="@id/myTourToolbar"
         android:layout_margin="10dp"
-        android:background="@drawable/button">
+        >
 
         <android.support.design.widget.TabLayout
             android:id="@+id/tabLayout"

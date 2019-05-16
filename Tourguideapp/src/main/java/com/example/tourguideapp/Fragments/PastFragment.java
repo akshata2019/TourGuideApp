@@ -8,12 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
-import com.example.tourguideapp.Activity.TourDetailsActivity;
+import com.example.tourguideapp.Activity.TourDetailsPastActivity;
 import com.example.tourguideapp.R;
-
-import static android.view.View.GONE;
-import static com.example.tourguideapp.Activity.TourDetailsActivity.buttonAccept;
-import static com.example.tourguideapp.Activity.TourDetailsActivity.buttonReject;
 
 public class PastFragment  extends Fragment {
     RelativeLayout firstLayout;
@@ -35,6 +31,7 @@ public class PastFragment  extends Fragment {
                 Intent i=new Intent(getActivity(), TourDetailsPastActivity.class);
 
                 startActivity(i);
+                getActivity().finish();
 
             }
         });

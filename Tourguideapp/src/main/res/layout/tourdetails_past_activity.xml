@@ -33,7 +33,7 @@
             android:id="@+id/statusText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tour Name"
+            android:text="Abu Dhabi"
             android:textSize="20dp"
             android:textColor="@color/colorSecondry"
             android:layout_marginLeft="80dp"
@@ -48,21 +48,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:scrollbars="none"
         android:padding="10dp"
-        android:background="@color/colorHeader"
+
         >
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="15dp"
-            android:background="@drawable/button"
+            android:padding="5dp"
+
             >
             <TextView
                 android:id="@+id/documentText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Abu Dhabi"
-                android:textStyle="italic"
+                android:textStyle="bold"
                 android:textColor="@color/colorHeader"
                 android:textSize="30dp"
                 android:layout_marginLeft="20dp"
@@ -72,29 +73,29 @@
             <HorizontalScrollView
                 android:id="@+id/horiscroll1"
                 android:layout_width="wrap_content"
-                android:layout_height="200dp"
+                android:layout_height="120dp"
                 android:layout_below="@id/documentText"
                 android:layout_marginTop="5dp"
-                android:scrollbars="horizontal">
+                android:scrollbars="none">
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="200dp">
+                    android:layout_height="100dp">
 
                     <RelativeLayout
                         android:id="@+id/relativeLayout6"
                         android:layout_width="wrap_content"
                         android:layout_height="200dp"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginTop="0dp"
-                        >
+                        android:layout_marginTop="0dp">
+
                         <ImageView
                             android:id="@+id/uploadfirst"
                             android:layout_width="200dp"
                             android:layout_height="200dp"
-                            android:layout_marginLeft="15dp"
+                            android:layout_marginLeft="5dp"
                             android:layout_marginTop="5dp"
-                            android:src="@drawable/sea" />
+                            android:src="@drawable/city" />
 
                         <ImageView
                             android:id="@+id/uploadSecond"
@@ -103,27 +104,26 @@
                             android:layout_marginLeft="5dp"
                             android:layout_marginTop="5dp"
                             android:layout_toRightOf="@id/uploadfirst"
-                            android:src="@drawable/abu_dhabi" />
+                            android:src="@drawable/city_night" />
 
                         <ImageView
                             android:id="@+id/uploadThird"
                             android:layout_width="200dp"
                             android:layout_height="200dp"
-                            android:layout_marginLeft="15dp"
+                            android:layout_marginLeft="5dp"
                             android:layout_marginTop="5dp"
                             android:layout_toRightOf="@id/uploadSecond"
-                            android:src="@drawable/night_life" />
+                            android:src="@drawable/night" />
 
                         <ImageView
                             android:id="@+id/uploadfourth"
                             android:layout_width="200dp"
                             android:layout_height="200dp"
-                            android:layout_marginLeft="15dp"
+                            android:layout_marginLeft="5dp"
                             android:layout_marginTop="5dp"
                             android:layout_toRightOf="@id/uploadThird"
-                            android:src="@drawable/moscue" />
+                            android:src="@drawable/mosc" />
                     </RelativeLayout>
-
 
 
                 </RelativeLayout>
@@ -134,8 +134,8 @@
                 android:id="@+id/imageView3"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginLeft="142dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginLeft="146dp"
+                android:layout_marginTop="30dp"
                 android:layout_toRightOf="@id/documentText"
                 android:src="@drawable/like" />
             <TextView
@@ -232,11 +232,11 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginBottom="100dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scrollbars="vertical"
                 android:layout_below="@id/comments"
+                android:layout_marginBottom="100dp"
                 />
 
 

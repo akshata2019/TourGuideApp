@@ -1,4 +1,4 @@
-package com.example.tourguideapp.Fragments;
+package com.example.tourguideapp.Activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,8 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.example.tourguideapp.Activity.BookingActivity;
-import com.example.tourguideapp.Activity.TourDetailsActivity;
 import com.example.tourguideapp.R;
 
 public class TourDetailsPastActivity extends Activity {

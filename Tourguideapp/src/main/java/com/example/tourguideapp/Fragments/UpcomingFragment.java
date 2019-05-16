@@ -30,6 +30,8 @@ public  class UpcomingFragment extends Fragment {
             public void onClick(View v) {
                 Intent i=new Intent(getActivity(), TouristTourDetailsActivity.class);
                 startActivity(i);
+                getActivity().finish();
+
 
             }
         });
