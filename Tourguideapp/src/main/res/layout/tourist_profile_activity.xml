@@ -21,31 +21,40 @@
 
         >
 
-        <ImageView
-            android:id="@+id/backImage"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/back"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/backImage"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/back"
+                android:layout_centerVertical="true"/>
 
-        <TextView
-            android:id="@+id/regiText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tourist Name"
-            android:textSize="20dp"
-            android:textColor="@color/colorText"
-            android:layout_marginLeft="80dp"
+            <TextView
+                android:id="@+id/regiText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="@color/colorText"
+                android:layout_marginLeft="0dp"
+                android:layout_centerVertical="true"
 
 
-            />
-        <ImageView
-            android:id="@+id/doneText"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/editprofile"
-            android:layout_marginLeft="120dp"
-
-            />
+                />
+            <ImageView
+                android:id="@+id/doneText"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/editprofile"
+                android:layout_marginLeft="120dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
 
     </android.support.v7.widget.Toolbar>
 
@@ -53,11 +62,12 @@
         android:id="@+id/profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="164dp"
-        android:layout_marginLeft="164dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
         android:layout_marginTop="16dp"
         android:src="@drawable/profile"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolbar" />
 
     <!--<TextView-->
@@ -100,21 +110,20 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="136dp"
-        android:layout_marginLeft="136dp"
         android:layout_marginTop="12dp"
-        android:text="Jess Joseph"
+        android:text="John Joseph"
         android:textColor="@color/colorPrimary"
         android:textSize="20dp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/profile" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="16dp"
         android:text="About Me :"
         android:textStyle="bold"
@@ -126,37 +135,29 @@
         android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
         android:layout_marginTop="12dp"
-        android:text="I am Jess from england working in IT Company Based in London .Travalling Is my hobby I like to explore new places.i liketo explore diffrent Cultureand food . I like to meet new people"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="I am John from england working in IT Company Based in London .Travalling Is my hobby I like to explore new places.i liketo explore diffrent Cultureand food . I like to meet new people"
         android:textColor="@color/colorPrimary"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView4" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="12dp"
-        android:text="-------------------------------------------------------"
-        android:textColor="@color/colorPrimary"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView5" />
+
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:text="Email : "
         android:textColor="@color/colorPrimary"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView6" />
+        app:layout_constraintTop_toBottomOf="@id/textView5" />
 
 
     <TextView
@@ -165,9 +166,9 @@
         android:layout_height="20dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="20dp"
-        android:text="abc@gmail.com"
+        android:text="johnj@gmail.com"
         app:layout_constraintLeft_toRightOf="@id/textView7"
-        app:layout_constraintTop_toBottomOf="@id/textView6" />
+        app:layout_constraintTop_toBottomOf="@id/textView5" />
 
     <TextView
         android:id="@+id/textView13"
@@ -178,14 +179,14 @@
         android:text="(verified)"
         android:textColor="@color/colorAccent"
         app:layout_constraintLeft_toRightOf="@id/textView8"
-        app:layout_constraintTop_toBottomOf="@id/textView6" />
+        app:layout_constraintTop_toBottomOf="@id/textView5" />
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="16dp"
         android:text="Phone : "
         android:textColor="@color/colorPrimary"
@@ -198,7 +199,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp"
-        android:text="0123456789"
+        android:text="9988776655"
         app:layout_constraintLeft_toRightOf="@id/textView14"
         app:layout_constraintTop_toBottomOf="@id/textView8" />
 
@@ -206,7 +207,7 @@
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="22dp"
-        android:layout_marginLeft="68dp"
+        android:layout_marginLeft="75dp"
         android:layout_marginTop="16dp"
         android:text="(verified)"
         android:textColor="@color/colorAccent"

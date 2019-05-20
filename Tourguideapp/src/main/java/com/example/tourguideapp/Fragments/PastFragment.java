@@ -31,7 +31,7 @@ public class PastFragment  extends Fragment {
                 Intent i=new Intent(getActivity(), TourDetailsPastActivity.class);
 
                 startActivity(i);
-                getActivity().finish();
+                //getActivity().finish();
 
             }
         });

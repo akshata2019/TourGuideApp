@@ -23,15 +23,15 @@ public class TouristTourDetailsActivity extends Activity {
             public void onClick(View v) {
                 Intent i =new Intent(TouristTourDetailsActivity.this,TourGuideActivity.class);
                 startActivity(i);
-                finish();
+                //finish();
             }
         });
         backImage=findViewById(R.id.backImage);
         backImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i =new Intent(TouristTourDetailsActivity.this,TouristTourActivity.class);
-                startActivity(i);
+                //Intent i =new Intent(TouristTourDetailsActivity.this,TouristTourActivity.class);
+                //startActivity(i);
                 finish();
             }
         });

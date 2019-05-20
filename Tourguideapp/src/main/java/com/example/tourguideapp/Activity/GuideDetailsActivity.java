@@ -19,8 +19,8 @@ public class GuideDetailsActivity extends Activity {
         backImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i =new Intent(GuideDetailsActivity.this,TourGuideActivity.class);
-                startActivity(i);
+                //Intent i =new Intent(GuideDetailsActivity.this,TourGuideActivity.class);
+                //startActivity(i);
                 finish();
             }
         });

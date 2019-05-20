@@ -49,7 +49,7 @@ public class BookingActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i=new Intent(BookingActivity.this,ProfileActivity.class);
                 startActivity(i);
-                finish();
+                //finish();
 
             }
         });

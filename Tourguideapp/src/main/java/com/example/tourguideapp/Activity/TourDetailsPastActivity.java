@@ -23,8 +23,8 @@ public class TourDetailsPastActivity extends Activity {
         backImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i =new Intent(TourDetailsPastActivity.this, BookingActivity.class);
-                startActivity(i);
+                //Intent i =new Intent(TourDetailsPastActivity.this, BookingActivity.class);
+                //startActivity(i);
                 finish();
             }
         });

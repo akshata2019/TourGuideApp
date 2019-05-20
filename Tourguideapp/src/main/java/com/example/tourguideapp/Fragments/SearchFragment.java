@@ -33,7 +33,7 @@ public  class SearchFragment extends Fragment {
             public void onClick(View v) {
                 Intent i=new Intent(getActivity(), FilterActivity.class);
                 startActivity(i);
-                getActivity().finish();
+                //getActivity().finish();
 
 
             }
@@ -44,7 +44,7 @@ public  class SearchFragment extends Fragment {
             public void onClick(View v) {
                 Intent i=new Intent(getActivity(), TouristTourDetailsActivity.class);
                 startActivity(i);
-                getActivity().finish();
+                //getActivity().finish();
 
             }
         });

@@ -45,7 +45,7 @@ public class TouristTourActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i=new Intent(TouristTourActivity.this,TouristProfileActivity.class);
                 startActivity(i);
-                finish();
+                //finish();
 
             }
         });

@@ -30,7 +30,7 @@ public class PendingFragment  extends Fragment {
             public void onClick(View v) {
                 Intent i=new Intent(getActivity(), TourDetailsActivity.class);
                 startActivity(i);
-                getActivity().finish();
+                //getActivity().finish();
 
             }
         });
