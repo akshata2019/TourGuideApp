@@ -116,19 +116,20 @@
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="16dp"
-        android:text="About Me-----------------------------------------"
+        android:text="About Me :"
+        android:textStyle="bold"
         android:textColor="@color/colorPrimary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView3" />
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="12dp"
-        android:text="-------------------------------------------------------"
+        android:text="I am Jess from england working in IT Company Based in London .Travalling Is my hobby I like to explore new places.i liketo explore diffrent Cultureand food . I like to meet new people"
         android:textColor="@color/colorPrimary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView4" />

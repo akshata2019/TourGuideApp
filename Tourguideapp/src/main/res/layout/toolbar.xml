@@ -5,15 +5,18 @@
     android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android" >
     <android.support.v7.widget.Toolbar
+        android:id="@+id/myTourToolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/myTourToolbar"
-        android:background="@color/colorAccent">
+        android:background="@color/colorAccent"
+
+        >
         <ImageView
             android:id="@+id/menu"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:src="@drawable/menu"/>
+
         <TextView
             android:id="@+id/regiText"
             android:layout_width="wrap_content"
@@ -21,18 +24,10 @@
             android:text="Booking"
             android:textSize="20dp"
             android:textColor="@color/colorText"
-            android:layout_marginLeft="100dp"
+            android:layout_marginLeft="150dp"
 
 
             />
-        <!--<ImageView-->
-            <!--android:id="@+id/doneText"-->
-            <!--android:layout_width="20dp"-->
-            <!--android:layout_height="20dp"-->
-            <!--android:src="@drawable/done"-->
-            <!--android:layout_marginLeft="100dp"-->
-
-            <!--/>-->
     </android.support.v7.widget.Toolbar>
     <RelativeLayout
         android:layout_width="match_parent"

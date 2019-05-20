@@ -10,40 +10,35 @@
 
 
 
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintTop_toTopOf="parent">
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorAccent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-
-            >
+            android:layout_height="match_parent">
             <ImageView
                 android:id="@+id/backImage"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:src="@drawable/back"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="0dp"
-                />
+                android:layout_centerVertical="true"/>
+
             <TextView
-                android:id="@+id/statusText"
+                android:id="@+id/regiText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Abu Dhabi"
                 android:textSize="20dp"
-                android:textColor="@color/colorSecondry"
-                android:layout_marginLeft="80dp"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="71dp"
-                app:layout_constraintStart_toStartOf="parent"
-
+                android:textColor="@color/colorText"
+                android:layout_marginLeft="0dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
                 />
-
-        </android.support.v7.widget.Toolbar>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
             <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -184,8 +179,9 @@
             android:id="@+id/instruction"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Instructions : Any Request by Tourist-------------------"
-            android:textColor="@color/colorPrimary"
+            android:text="Instructions : "
+            android:textStyle="bold"
+           android:textColor="@color/colorPrimary"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:layout_below="@id/tourTime"
@@ -194,21 +190,11 @@
             android:id="@+id/lineFirst"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="----------------------------------------------------------------------------"
+            android:text="We Are Group of four people.language prefered  english and  german. It is study Tour one from our Group is handicap so we need whealchair"
             android:textColor="@color/colorPrimary"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="5dp"
             android:layout_below="@id/instruction"
-            />
-        <TextView
-            android:id="@+id/lineSecond"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="----------------------------------------------------------------------------"
-            android:textColor="@color/colorPrimary"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="5dp"
-            android:layout_below="@id/lineFirst"
             />
 
 
@@ -220,7 +206,7 @@
             android:textColor="@color/colorPrimary"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
-            android:layout_below="@id/lineSecond"
+            android:layout_below="@id/lineFirst"
             />
 
 
