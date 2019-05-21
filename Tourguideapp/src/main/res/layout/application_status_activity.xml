@@ -27,27 +27,32 @@
         app:layout_constraintStart_toStartOf="parent"
 
         >
-        <ImageView
-            android:id="@+id/backImage"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-           android:src="@drawable/back"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="0dp"
-            />
-        <TextView
-            android:id="@+id/statusText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Application Status"
-            android:textSize="20dp"
-            android:textColor="@color/colorSecondry"
-            android:layout_marginLeft="80dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="71dp"
-            app:layout_constraintStart_toStartOf="parent"
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/backImage"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/back"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="0dp"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:id="@+id/statusText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Application Status"
+                android:textSize="20dp"
+                android:textColor="@color/colorSecondry"
+                android:layout_marginLeft="0dp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="71dp"
+                app:layout_constraintStart_toStartOf="parent"
 
-            />
+                />
+        </RelativeLayout>
 
     </android.support.v7.widget.Toolbar>
 
@@ -77,6 +82,7 @@
             android:text="Pending/"
             android:layout_marginLeft="120dp"
             android:textColor="#ff9800"
+            android:textStyle="bold"
             android:layout_toRightOf="@id/textCurrentStatus"
 
             />
@@ -87,6 +93,7 @@
             android:text="Approved/"
             android:layout_marginLeft="120dp"
             android:textColor="#388e3c"
+            android:textStyle="bold"
             android:layout_toRightOf="@id/textCurrentStatus"
             android:layout_below="@id/pending"
             />
@@ -96,6 +103,7 @@
             android:text="Rejected"
             android:layout_marginLeft="120dp"
             android:textColor="#bf360c"
+            android:textStyle="bold"
             android:layout_toRightOf="@id/textCurrentStatus"
             android:layout_below="@id/approved"
             />
@@ -106,14 +114,13 @@
         android:id="@+id/summeryText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Summery"
+        android:text="Summary"
+        android:textStyle="bold"
         android:textColor="@color/colorText"
         android:textSize="15dp"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="150dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="71dp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/relativeLayout"
         />
 
@@ -123,7 +130,7 @@
         android:id="@+id/firstname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Name  :  Jorg"
+        android:text="Name  :  Nijas Jamal"
         android:textColor="@color/colorText"
         android:textSize="15dp"
         android:layout_marginTop="20dp"
@@ -194,7 +201,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/editTextLastName"
-        android:text="Mobile number Verified"
+        android:text="Mobile Number Verified"
         android:textColor="@color/colorText"
         android:textSize="15dp"
         android:layout_marginLeft="20dp"
@@ -308,18 +315,16 @@
 
     <Button
         android:id="@+id/registerButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/button_def_width"
+        android:layout_height="@dimen/button_def_height"
         android:text="Submit"
         android:background="@drawable/button_rounded"
         android:textColor="@color/colorButtonText"
-        app:layout_constraintRight_toLeftOf="@id/docFourth"
         app:layout_constraintTop_toBottomOf="@id/termsText"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="140dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="71dp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        style="@style/style_button"
         />
 
 

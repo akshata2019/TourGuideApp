@@ -24,14 +24,14 @@ public class TourGuideActivity extends Activity {
             public void onClick(View v) {
                 Intent i =new Intent(TourGuideActivity.this,GuideDetailsActivity.class);
                 startActivity(i);
-                finish();
+                //finish();
             }
         });
         backImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i =new Intent(TourGuideActivity.this,TouristTourActivity.class);
-                startActivity(i);
+                //Intent i =new Intent(TourGuideActivity.this,TouristTourActivity.class);
+                //startActivity(i);
                 finish();
             }
         });

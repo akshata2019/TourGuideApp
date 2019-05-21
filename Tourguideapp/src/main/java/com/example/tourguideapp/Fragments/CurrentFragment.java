@@ -32,7 +32,7 @@ public class CurrentFragment  extends Fragment {
             public void onClick(View v) {
                 Intent i=new Intent(getActivity(), TourDetailsPastActivity.class);
                 startActivity(i);
-                getActivity().finish();
+                //getActivity().finish();
 
             }
         });

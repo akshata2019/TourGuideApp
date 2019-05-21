@@ -49,7 +49,7 @@
             android:layout_below="@id/pastTour"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="1dp"
-            android:text=" John joseph"
+            android:text=" John Joseph"
             android:textColor="@color/colorSecondry"
             android:textSize="17dp" />
 
@@ -143,7 +143,7 @@
             android:id="@+id/upcomingTours1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="35dp"
             android:text="Ravi Kumar"
             android:layout_below="@id/pastTour1"
             android:textColor="@color/colorHeader"
@@ -237,7 +237,7 @@
             android:id="@+id/upcomingTours2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="35dp"
             android:text=" Ram Rao"
             android:layout_below="@id/pastTour2"
             android:textColor="@color/colorSecondry"

@@ -13,7 +13,7 @@ import com.example.tourguideapp.R;
 public class RegistrationActivity extends Activity {
     Button registerButton;
     Spinner spinnerView;
-    String[] spinnerValue = {"New Value 1  ", "New Value 2   ", "New Value 3   ", "New Value 4    "};
+    String[] spinnerValue = {"Certification 1  ", "Certification 2   ", "Certification 3   ", "Certification 4    "};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

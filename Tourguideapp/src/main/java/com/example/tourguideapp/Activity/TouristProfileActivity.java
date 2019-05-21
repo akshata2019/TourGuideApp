@@ -18,8 +18,8 @@ public class TouristProfileActivity extends Activity {
         backImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i =new Intent(TouristProfileActivity.this,BookingActivity.class);
-                startActivity(i);
+                //Intent i =new Intent(TouristProfileActivity.this,BookingActivity.class);
+                //startActivity(i);
                 finish();
             }
         });

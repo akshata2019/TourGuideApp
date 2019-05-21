@@ -21,8 +21,8 @@ public class ApplicationStatusActivity extends Activity {
         backImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i =new Intent(ApplicationStatusActivity.this,RegistrationActivity.class);
-                startActivity(i);
+                //Intent i =new Intent(ApplicationStatusActivity.this,RegistrationActivity.class);
+                //startActivity(i);
                 finish();
             }
         });
